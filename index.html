@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/icon.PNG" type="image/ico" sizes="16x16">
+    <title>Racional</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.sass" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="header boxs">
+        <div class="container-fluid">
+            <nav class="navbar navbar-default">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a href="index.html" class="navbar-brand">Racional</a>
+                    <button type="button" class="navbar-toggler collapsebtn collapsed"  data-toggle="collapse" data-target="#nav" area-expanded="false" onclick="navBox()"><span class="navIcon"></span></button>
+                    <div class=" navbar-collapse collapse nav_ul" id="nav">
+                        <ul class="navbar-nav header_ul">                                           
+                            <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">¿Cómo funciona?</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Inversiones</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Preguntas frecuentes</a></li>
+                            <li class="headButtons">
+                                <a class="comment" href="javascript:void(0)">¡Comenzar!</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </nav>
+        </div>
+    </div>
+
+    <div class="haz boxs">
+        <div class="haz-outter boxs">
+                <div class="haz-left-all boxs d-inline-block">
+                    <div class="haz-left boxs">
+                        <h1>Haz crecer <br> tus ahorros.</h1>
+                        <p>Racional te permite planificar y poner tus ahorros a trabajar, con sólo algunos clicks.</p>
+                        <div class="store boxs">
+                            <a href="#" class="mobplay"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="35" viewBox="0 0 28 35">
+                                <path fill="#0DC299" fill-rule="nonzero" d="M9.283 34.588C4.203 34.558 0 24.156 0 18.858c0-8.655 6.472-10.55 8.967-10.55 1.124 0 2.324.444 3.383.835.74.274 1.506.556 1.932.556.255 0 .855-.24 1.386-.45 1.13-.452 2.538-1.014 4.177-1.014h.01c1.223 0 4.934.27 7.164 3.63l.523.788-.752.569c-1.074.813-3.035 2.296-3.035 5.234 0 3.48 2.22 4.818 3.287 5.462.47.284.958.577.958 1.217 0 .419-3.328 9.401-8.162 9.401-1.183 0-2.019-.356-2.756-.67-.746-.32-1.39-.593-2.454-.593-.539 0-1.22.255-1.942.527-.986.369-2.103.788-3.37.788h-.033zM20.585 0c.129 4.486-3.204 7.598-6.533 7.403C13.504 3.823 17.381 0 20.585 0z"/>
+                            </svg><span>App Store</span></a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="36" viewBox="0 0 28 36">
+                                <path fill="#0DC299" fill-rule="nonzero" d="M21.442 13.68a.75.75 0 0 1 .758.744v11.904c0 1.798-1.304 3.3-3.032 3.646v3.794c0 1.23-1.02 2.232-2.274 2.232-1.253 0-2.274-1.001-2.274-2.232v-3.72h-1.515v3.72c0 1.23-1.02 2.232-2.274 2.232s-2.274-1.001-2.274-2.232v-3.794c-1.728-.347-3.032-1.848-3.032-3.646V14.424c0-.41.34-.744.758-.744h15.16zM17.83 4.076a8.432 8.432 0 0 1 4.37 7.4c0 .421-.34.764-.758.764H6.283a.762.762 0 0 1-.758-.765 8.43 8.43 0 0 1 4.372-7.399L8.619 1.067A.766.766 0 0 1 9.016.064c.38-.17.83.012.995.402l1.28 3.01a8.236 8.236 0 0 1 2.573-.414c.897 0 1.761.148 2.572.414l1.278-3.01a.753.753 0 0 1 .995-.402.766.766 0 0 1 .398 1.003l-1.277 3.01zm-7 5.105a.762.762 0 0 0 .759-.765.762.762 0 0 0-.758-.765.762.762 0 0 0-.758.765c0 .422.34.765.758.765zm6.064 0a.762.762 0 0 0 .758-.765.762.762 0 0 0-.758-.765.762.762 0 0 0-.758.765c0 .422.34.765.758.765zm8.931 3.779c1.2 0 2.175 1.03 2.175 2.295v7.65c0 1.265-.976 2.295-2.175 2.295-1.2 0-2.175-1.03-2.175-2.295v-7.65c0-1.265.976-2.295 2.175-2.295zM2.175 13c1.2 0 2.175 1.03 2.175 2.295v7.65c0 1.265-.976 2.295-2.175 2.295C.975 25.24 0 24.21 0 22.945v-7.65C0 14.03.976 13 2.175 13z"/>
+                            </svg><span>Google Play</span></a>
+                        </div>
+                        <div class="store store12 boxs">
+                            <a href="#" class="mobplay"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="35" viewBox="0 0 28 35">
+                                <path fill="#fff" fill-rule="nonzero" d="M9.283 34.588C4.203 34.558 0 24.156 0 18.858c0-8.655 6.472-10.55 8.967-10.55 1.124 0 2.324.444 3.383.835.74.274 1.506.556 1.932.556.255 0 .855-.24 1.386-.45 1.13-.452 2.538-1.014 4.177-1.014h.01c1.223 0 4.934.27 7.164 3.63l.523.788-.752.569c-1.074.813-3.035 2.296-3.035 5.234 0 3.48 2.22 4.818 3.287 5.462.47.284.958.577.958 1.217 0 .419-3.328 9.401-8.162 9.401-1.183 0-2.019-.356-2.756-.67-.746-.32-1.39-.593-2.454-.593-.539 0-1.22.255-1.942.527-.986.369-2.103.788-3.37.788h-.033zM20.585 0c.129 4.486-3.204 7.598-6.533 7.403C13.504 3.823 17.381 0 20.585 0z"/>
+                            </svg><span>Descargar en App Store</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="haz-right-all boxs d-inline-block">
+                    <div class="haz-right boxs">
+                        <img src="img/bg1.png" alt="bg1" class="img-fluid desktop_vew">
+                        <img src="img/iphone.png.svg" alt="bg1" class="img-fluid iphone_mobile">
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- for slick -->
+    <!-- <div class="solo boxs section-pad">
+        <div class="container-fluid">
+            <div class="solo-inner boxs">
+                
+            </div>
+        </div>
+    </div> -->
+<!-- slick section started from here -->
+
+<div class="slickgroup invertir pontu boxs">
+    <div class="container-fluid side-padding slicko float-left">
+        <div class="contain-slick boxs">
+            <div class="slickgroupall  mySlides  slideshow-container boxs"  style="display: block;">
+                <div class="row mejor">
+                    <div class="col-xl-4 col-md-6 colxd noright">
+                        <div class="slicklft  mejortext nunca  boxs">
+                            <div class="slickinner boxs">
+                                <h3>Sólo tienes que tomar una decisión: ahorrar 1</h3>
+                                <p>Sigue un plan de ahorro personalizado para alcanzar todas tus metas.</p>
+                            </div>
+                            <div class="slickouter boxs">
+                                <div class="slicklftinner  boxs">
+                                    <div class="meta boxs">
+                                        <h6>META</h6>
+                                        <div class="flag">
+                                            <img src="img/flag.svg" class="img-fluid" alt="flag">
+                                            <h2>Departamento</h4>
+                                        </div>
+                                        <h4><span>¡Súper! </span> Vas en camino a cubrir
+                                            tu meta de $97.000.000.</h4>
+                                        <p class="aporte">Aporte mensual: $53.509</p>
+                                        <div class="flag flag2">
+                                            <h5></h5>
+                                            <p>Juan Pablo, 27 años</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 slickimages col-md-12 noleft">
+                        <div class="slickryt boxs">
+                            <img src="img/bg2.png" class="img-fluid" alt="bg2">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="slickgroupall  mySlides  slideshow-container boxs">
+                <div class="row mejor">
+                    <div class="col-xl-4 col-md-6 colxd noright">
+                        <div class="slicklft mejortext nunca  boxs">
+                            <div class="slickinner boxs">
+                                <h3>Sólo tienes que tomar una decisión: ahorrar 2</h3>
+                                <p>Sigue un plan de ahorro personalizado para alcanzar todas tus metas.</p>
+                            </div>
+                            <div class="slickouter boxs">
+                                <div class="slicklftinner  boxs">
+                                    <div class="meta boxs">
+                                        <h6>META</h6>
+                                        <div class="flag">
+                                            <img src="img/flag.svg" class="img-fluid" alt="flag">
+                                            <h2>Departamento</h4>
+                                        </div>
+                                        <h4><span>¡Súper! </span> Vas en camino a cubrir
+                                            tu meta de $97.000.000.</h4>
+                                        <p class="aporte">Aporte mensual: $53.509</p>
+                                        <div class="flag flag2">
+                                            <h5></h5>
+                                            <p>Juan Pablo, 27 años</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 slickimages col-md-12 noleft">
+                        <div class="slickryt boxs">
+                            <img src="img/bg2.png" class="img-fluid" alt="bg2">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="slickgroupall  mySlides  slideshow-container boxs">
+                <div class="row mejor">
+                    <div class="col-xl-4 col-md-6 colxd noright">
+                        <div class="slicklft mejortext nunca  boxs">
+                            <div class="slickinner boxs">
+                                <h3>Sólo tienes que tomar una decisión: ahorrar 3</h3>
+                                <p>Sigue un plan de ahorro personalizado para alcanzar todas tus metas.</p>
+                            </div>
+                            <div class="slickouter boxs">
+                                <div class="slicklftinner  boxs">
+                                    <div class="meta boxs">
+                                        <h6>META</h6>
+                                        <div class="flag">
+                                            <img src="img/flag.svg" class="img-fluid" alt="flag">
+                                            <h2>Departamento</h4>
+                                        </div>
+                                        <h4><span>¡Súper! </span> Vas en camino a cubrir
+                                            tu meta de $97.000.000.</h4>
+                                        <p class="aporte">Aporte mensual: $53.509</p>
+                                        <div class="flag flag2">
+                                            <h5></h5>
+                                            <p>Juan Pablo, 27 años</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 slickimages col-md-12 noleft">
+                        <div class="slickryt boxs">
+                            <img src="img/bg2.png" class="img-fluid" alt="bg2">
+                        </div>
+                    </div>
+                    
+                </div>
+               
+            </div>
+            <a class="prev" onclick="plusSlides(-1)"><img src="img/arrow-right.svg" alt="arrow-right"></a>
+            <a class="next" onclick="plusSlides(1)"><img src="img/arrow-right.svg" alt="arrow-right"></a>
+        </div>
+    
+        
+<br>
+
+<div class="text-center dotsarea boxs">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+    </div>
+</div>
+
+
+<!-- slick section ended -->
+
+<div class="invertir boxs section-pad">
+    <div class="container">
+        <div class="nunca boxs">
+            <h3>Invertir nunca había sido tan fácil.</h3>
+            <p>Responde algunas preguntas, crea tu cuenta en la app <br>
+                y transfiere. Así de simple.</p>
+        </div>
+        <div class="mobilescreen-all boxs">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="mobscreen float-right">
+                        <img src="img/mob-white.png" alt="mob-white" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mobtext">
+                        <div class="badges">
+                            <div class="badgeimg">
+                                <img src="img/badge.svg" alt="badge" class="img-fluid">
+                            </div>
+                            <div class="badgetext">
+                                <h5>Simple</h5>
+                                <p>Ya no tienes que ser experto en inversiones para tener tu plata bien invertida.</p>
+                            </div>
+                        </div>
+                        <div class="badges">
+                            <div class="badgeimg">
+                                <img src="img/badge.svg" alt="badge" class="img-fluid">
+                            </div>
+                            <div class="badgetext">
+                                <h5>Personalizado</h5>
+                                <p>Todes somos distintos, por lo que te recomendamos un portafolio
+                                    de inversión hecho a tu medida.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pontu pontu1 invertir boxs">
+    <div class="container">
+        <div class="pntuhead nunca">
+            <h3>¡Pon tu dinero a trabajar!</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mejor mejor1 boxs">
+                    <div class="mejorimg">
+                        <img src="img/badge.svg" class="img-fluid" alt="badge">
+                    </div>
+                    <div class="mejortext">
+                        <h4>Mejor que dejar <span>tu plata en el banco</span> </h4>
+                        <p>¿Por qué dejar la plata parada en tu cuenta, cuando tienes la posibilidad de aumentar su valor en el tiempo?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mejor mejor1 boxs">
+                    <div class="mejorimg">
+                        <img src="img/badge.svg" class="img-fluid" alt="badge">
+                    </div>
+                    <div class="mejortext">
+                        <h4>Mejor que dejar <span>tu plata en el banco</span> </h4>
+                        <p>¿Por qué dejar la plata parada en tu cuenta, cuando tienes la posibilidad de aumentar su valor en el tiempo?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mejor mejor1 boxs">
+                    <div class="mejorimg">
+                        <img src="img/badge.svg" class="img-fluid" alt="badge">
+                    </div>
+                    <div class="mejortext">
+                        <h4>Mejor que dejar <span>tu plata en el banco</span> </h4>
+                        <p>¿Por qué dejar la plata parada en tu cuenta, cuando tienes la posibilidad de aumentar su valor en el tiempo?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="viewbtn boxs">
+            <a href="#">Ver más</a>
+        </div>
+    </div>
+</div>
+
+<div class="momento invertir pontu boxs">
+    <div class="container">
+        <div class="momento_head nunca boxs">
+            <h3>El mejor momento para invertir es ahora.</h3>
+        </div>
+        <div class="momentobtn viewbtn comenzarbtn boxs">
+            <a href="#">¡Comenzar!</a>
+        </div>
+        <div class="momentobtn viewbtn appbtn boxs">
+            <a href="#" class="mobplay"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="35" viewBox="0 0 28 35">
+                <path fill="#fff" fill-rule="nonzero" d="M9.283 34.588C4.203 34.558 0 24.156 0 18.858c0-8.655 6.472-10.55 8.967-10.55 1.124 0 2.324.444 3.383.835.74.274 1.506.556 1.932.556.255 0 .855-.24 1.386-.45 1.13-.452 2.538-1.014 4.177-1.014h.01c1.223 0 4.934.27 7.164 3.63l.523.788-.752.569c-1.074.813-3.035 2.296-3.035 5.234 0 3.48 2.22 4.818 3.287 5.462.47.284.958.577.958 1.217 0 .419-3.328 9.401-8.162 9.401-1.183 0-2.019-.356-2.756-.67-.746-.32-1.39-.593-2.454-.593-.539 0-1.22.255-1.942.527-.986.369-2.103.788-3.37.788h-.033zM20.585 0c.129 4.486-3.204 7.598-6.533 7.403C13.504 3.823 17.381 0 20.585 0z"/>
+            </svg><span>Descargar en App Store</span></a>
+        </div>
+    </div>
+</div>
+
+<div class="racionalgroup boxs">
+    <div class="container">
+        <div class="groupall boxs">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <div class="group-lft boxs">
+                        <img src="img/groupimg.svg" class="img-fluid" alt="groupimg">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="group-ryt boxs">
+                        <h4>Racional es <span>tecnología inclusiva</span> para que todes puedan tomar mejores decisiones con su plata.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer boxs">
+    <div class="container-fluid">
+        <div class="footerhead d-inline-block">
+            <a href="index.html" class="navbar-brand">Racional</a>
+        </div>
+        <div class="footerStore float-right ">
+            <a href="#"><img src="img/app-store-badge.svg" class="img-fluid" alt="app-store"></a>
+            <a href="#"><img src="img/Group 718.svg" class="img-fluid" alt="play-store"></a>
+        </div>
+        
+        <div class="footer-inner boxs">
+            <div class="footerarea foot_ul d-inline-block">
+                <ul class="footer_ul">
+                    <li><a  href="#">Inicio</a></li>
+                    <li><a  href="#">Nostros</a></li>
+                    <li><a  href="#">Como Funciona?</a></li>
+                    <li><a  href="#">Inversiones</a></li>
+                    <li><a  href="#">Preguntas frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="footer-right float-right">
+                <a href="mailto:hola@racional.cl">hola@racional.cl</a>
+            </div>
+        </div>
+        <div class="borderarea boxs"></div>
+        <div class="footerStore21 text-center boxs">
+            <h6>Descarga la app</h6>
+            <a href="#"><img src="img/app-store-badge.svg" class="img-fluid" alt="app-store"></a>
+            <a href="#"><img src="img/Group 718.svg" class="img-fluid" alt="play-store"></a>
+        </div>
+        <div class="borderarea borderarea1 boxs"></div>
+        <div class="footer-para boxs">
+            <p>Al abrir una cuenta en Racional, estarás también abriendo una cuenta en Vector Capital, la Corredora de Bolsa regulada por la CMF con la que tenemos una alianza. A través de Vector, podrás depositar tu dinero, y comprar y vender tus ETFs en la Bolsa de Santiago, siempre con las mejores condiciones de mercado.  </p>
+        </div>
+
+        <div class="socialicon boxs">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                <path fill="#FFF" fill-rule="nonzero" d="M28.55 6.56c-1.044.45-2.089.73-3.133.843 1.18-.707 1.977-1.707 2.392-2.998a10.681 10.681 0 0 1-3.453 1.314C23.277 4.573 21.952 4 20.38 4c-1.505 0-2.788.53-3.85 1.592-1.061 1.061-1.592 2.344-1.592 3.85 0 .404.045.82.135 1.246a15.163 15.163 0 0 1-6.259-1.676 15.427 15.427 0 0 1-4.961-4.018 5.33 5.33 0 0 0-.741 2.746 5.3 5.3 0 0 0 .657 2.594 5.436 5.436 0 0 0 1.769 1.937 5.398 5.398 0 0 1-2.46-.69v.067c0 1.314.413 2.468 1.238 3.462a5.353 5.353 0 0 0 3.125 1.878c-.471.124-.949.186-1.432.186-.314 0-.657-.028-1.027-.084a5.325 5.325 0 0 0 1.92 2.687 5.31 5.31 0 0 0 3.167 1.086c-1.976 1.55-4.228 2.325-6.755 2.325-.483 0-.92-.022-1.314-.067 2.527 1.628 5.312 2.442 8.356 2.442 1.932 0 3.746-.305 5.441-.918 1.696-.612 3.145-1.432 4.347-2.46a16.46 16.46 0 0 0 3.108-3.546 15.813 15.813 0 0 0 1.946-4.186 15.465 15.465 0 0 0 .623-5.08 11.396 11.396 0 0 0 2.73-2.812z"/>
+            </svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                <path fill="#FFF" fill-rule="nonzero" d="M25.28 7.253l1.933-1.848V5H20.52l-4.77 11.872L10.323 5H3.306v.405L5.563 8.12c.22.201.334.495.305.79v10.677c.07.385-.055.78-.326 1.06L3 23.728v.4h7.208v-.404l-2.542-3.076a1.255 1.255 0 0 1-.35-1.06v-9.235l6.328 13.78h.735l5.44-13.78v10.978c0 .29 0 .349-.189.538l-1.957 1.894v.405h9.495v-.404l-1.886-1.847a.561.561 0 0 1-.216-.54V7.793a.559.559 0 0 1 .215-.54z"/>
+            </svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                <path fill="#FFF" fill-rule="nonzero" d="M20.28 3a6.594 6.594 0 0 1 6.588 6.587V20.28a6.594 6.594 0 0 1-6.587 6.587H9.586A6.594 6.594 0 0 1 3 20.28V9.587A6.594 6.594 0 0 1 9.586 3h10.695zm4.47 17.281V9.587a4.474 4.474 0 0 0-4.47-4.47H9.587a4.474 4.474 0 0 0-4.468 4.47V20.28a4.474 4.474 0 0 0 4.468 4.469h10.695a4.474 4.474 0 0 0 4.47-4.469zM14.934 8.784a6.157 6.157 0 0 1 6.15 6.15 6.157 6.157 0 0 1-6.15 6.15 6.157 6.157 0 0 1-6.15-6.15 6.157 6.157 0 0 1 6.15-6.15zm0 10.182a4.037 4.037 0 0 0 4.032-4.032 4.037 4.037 0 0 0-4.032-4.032 4.037 4.037 0 0 0-4.033 4.032 4.037 4.037 0 0 0 4.033 4.032zm6.408-11.978c.41 0 .81.166 1.098.455.29.288.455.689.455 1.098 0 .408-.165.81-.455 1.099-.29.288-.689.454-1.098.454-.408 0-.81-.166-1.097-.454-.29-.29-.456-.69-.456-1.099 0-.41.166-.81.456-1.098a1.56 1.56 0 0 1 1.097-.455z"/>
+            </svg>
+            </a>
+        </div>
+        
+    </div>
+</footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1133 @@
+@font-face 
+    font-family: 'ProductSansBold'
+    src: url(../fonts/ProductSansBold.ttf)
+    
+@font-face 
+    font-family: 'ProductSansMedium'
+    src: url(../fonts/ProductSansMedium.ttf)
+
+@font-face 
+    font-family: 'ProductSansRegular'
+    src: url(../fonts/ProductSansRegular.ttf)
+
+@font-face 
+    font-family: 'RozhaOneRegular'
+    src: url(../fonts/RozhaOneRegular.ttf)
+
+@font-face 
+    font-family: 'MiradorBlack'
+    src: url(../fonts/MiradorBlack.otf)
+
+$ProductSansRegular: 'ProductSansRegular'
+$ProductSansBold: 'ProductSansBold'
+$ProductSansMedium: 'ProductSansMedium'
+$RozhaOneRegular: 'RozhaOneRegular'
+$MiradorBlack: 'MiradorBlack'
+
+
+//color
+$lightgreen: #18daae
+$Darkgray: #656565
+$white: #fff
+$black: #000
+$lightgray: #919191
+$blueblack: #23314f
+$skycolor: #0dc299
+$lightsky: #e0f8f3
+$transparentsky: #eef9fa
+$blkcolor: #18273a
+$grayish: #9b9b9b
+$darkblue: #1d2c44
+$warmgray: #707070
+$lightwarmgray: #a7a7a7
+$warmlightsky: #41caa1
+$dimblack: #aeaeae
+
+
+@mixin menu
+    font-family: $ProductSansRegular
+    font-size: 16px
+    color: #656565
+    line-height: 25px
+    letter-spacing: 0.01px
+
+@mixin btn
+    font-family: $ProductSansBold
+    font-size: 16px
+    background-color: $lightgreen
+    color: $white
+    border-radius: 20px
+    line-height: 25px
+    letter-spacing: 0.01px
+
+@mixin largefont
+    font-family: $ProductSansRegular
+    font-size: 22px
+    color: $lightgray
+    line-height: 28px
+    letter-spacing: 0.3px
+
+@mixin mediumfont
+    font-family: $ProductSansRegular
+    font-size: 18px
+    line-height: 28px
+    letter-spacing: 0.24px
+    color: $skycolor
+
+@mixin extralargefont
+    font-family: $RozhaOneRegular
+    font-size: 36px
+    line-height: 30px
+    letter-spacing: 0.85px
+    color: $blkcolor
+
+@mixin smallfont
+    font-family: $ProductSansRegular
+    font-size: 20px
+    line-height: 27px
+    letter-spacing: 0.01px
+    color: $grayish
+
+@mixin med-largefont
+    font-family: $ProductSansMedium
+    font-size: 22px
+    color: $darkblue
+    line-height: 24px
+    letter-spacing: 0.01px
+
+button,
+a 
+    transition: all 0.35s ease 0s
+a 
+    outline: medium none !important
+    text-decoration: none !important
+    display: inline-block
+
+a
+    &:hover 
+        text-decoration: none
+
+.boxs 
+    width: 100%
+    float: left
+    display: block
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li 
+    list-style: none
+    padding: 0
+    margin: 0
+
+label 
+    font-weight: normal
+    margin: 0
+
+body
+    color: #000
+.full_width
+    max-width: 100% !important
+li 
+    display: inline-block
+.nopadding 
+    padding: 0 !important
+.noleft
+    padding-left: 0 !important
+.noright
+    padding-right: 0 !important
+
+.header
+    background-color: $white
+    position: fixed
+    z-index: 999
+    //box-shadow: 0 2px 5px rgba(0,0,0,0.2)
+
+
+.navbar-brand
+    font-family: $MiradorBlack
+    font-size: 26px
+    letter-spacing: 0.01px
+    color: $blkcolor
+    padding: 0
+
+.navbar
+    width: 100%
+    display: inline-block
+    .nav_ul
+        float : right
+
+        ul 
+            li
+                margin-right: 15px
+                a
+                    @include menu
+                    &:hover
+                        color: $lightgreen !important
+                
+                &.headButtons
+                    a 
+                        @include btn
+                        padding: 7px 21px
+                        &:hover
+                            background-color: $lightsky
+                    
+.haz
+    margin-top: 73px
+    .haz-outter
+        .haz-left-all
+            width: 50%
+            .haz-left
+                padding-left: 211px
+                padding-top: 156px
+
+                h1
+                    font-family: $RozhaOneRegular
+                    font-size: 70.5px
+                    line-height: 65px
+                    letter-spacing: normal
+                    color: $blueblack
+                p
+                    @include largefont
+                    padding-top: 26px
+                .store
+                    padding-top: 80px
+                    a
+                        @include mediumfont
+                        padding: 10px 23px
+                        display: inline-flex
+                        align-items: center
+                        border-radius: 10px
+                        background-color: $lightsky
+                        &:hover
+                            background-color: $skycolor
+                            color: $lightsky
+                            svg
+                                path
+                                    fill: $lightsky
+                        &.mobplay
+                                margin-right: 24px
+                        
+                        svg
+                            margin-right: 18px
+                            
+
+        .haz-right-all  
+            width: 50%
+            float: right
+            .haz-right
+                float: right
+                img
+                    float: right
+                img.iphone_mobile
+                        display: none
+                    
+.navbar-light
+    .navbar-toggler
+        color: transparent 
+        border-color: transparent 
+        float: right 
+.collapsebtn
+    position: relative
+    .navIcon 
+        position: absolute
+        height: 2px
+        width: 22px
+        right: 0
+        top: 18px
+        background: $blkcolor
+        transition-duration: 0.075s
+        transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19)
+        &:before 
+            position: absolute
+            content: ''
+            top: -8px
+            left: 0
+            height: 2px
+            width: 22px
+            background: $blkcolor
+            transition: all 0.3s ease
+
+button
+    &:focus, 
+        outline: none
+              
+                     
+                        
+                            
+
+.section-pad
+    padding: 50px 0
+.side-padding
+    padding: 0 45px
+.solo
+    //background-color: $transparentsky
+                        
+                    
+.invertir
+    padding-bottom: 0
+    .nunca
+        text-align: center
+        h3
+            @include extralargefont
+        p 
+            @include smallfont
+            padding-top: 20px
+
+    .mobilescreen-all
+            padding-top: 36px
+            //.mobscreen
+            .mobtext
+                padding-left: 50px
+                .badges
+                        display: flex
+                        align-items: start
+                        justify-content: center
+                        padding-bottom: 62px
+                        position: relative
+                        padding-left: 43px
+                        &:last-child
+                            padding-bottom: 0px
+                        .badgeimg
+                            position: absolute
+                            left: 0
+                        .badgetext
+                            h5
+                                @include med-largefont
+                            p 
+                                @include smallfont
+                                font-size: 19px
+                                color: $warmgray
+                                line-height: 25px
+                                padding-top: 5px
+                                padding-right: 164px
+
+                
+.pontu
+    background: url('../img/bg3.svg') no-repeat
+    background-position: right
+    padding: 57px 0
+    .pntuhead
+        text-align: left
+        padding-bottom: 58px
+    .mejor
+        display: flex
+        align-items: start
+        justify-content: center
+        padding-bottom: 62px
+        position: relative
+        padding-left: 43px 
+        &.mejor1
+            padding-bottom: 0
+        .mejorimg
+            position: absolute
+            left: 0
+            //padding-right: 27px
+        .mejortext
+            h4
+                @include  med-largefont
+                font-size: 20px
+                color: $blkcolor
+                span 
+                    color: $skycolor
+            p 
+                @include mediumfont
+                color: $lightwarmgray
+                line-height: 24px
+                padding-top: 6px
+    .viewbtn
+        text-align: center
+        padding-top: 70px
+        a 
+            font-family: $ProductSansMedium
+            font-size: 16px
+            line-height: 22px
+            letter-spacing: 0.01px
+            color: $warmlightsky
+            padding: 12px 31px
+            border: 1px solid hsla(166, 87%, 41%, .33)
+            border-radius: 24px
+            &:hover
+                background-color: $warmlightsky
+                color: $lightsky
+            
+            
+        
+    
+.momento
+    padding: 99px 0 70px
+    background: rgba(13,194,152,1)
+    background: -moz-linear-gradient(left, rgba(13,194,152,1) 0%, rgba(13,194,152,1) 50%, rgba(93,205,181,1) 100%)
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(13,194,152,1)), color-stop(50%, rgba(13,194,152,1)), color-stop(100%, rgba(93,205,181,1)))
+    background: -webkit-linear-gradient(left, rgba(13,194,152,1) 0%, rgba(13,194,152,1) 50%, rgba(93,205,181,1) 100%)
+    background: -o-linear-gradient(left, rgba(13,194,152,1) 0%, rgba(13,194,152,1) 50%, rgba(93,205,181,1) 100%)
+    background: -ms-linear-gradient(left, rgba(13,194,152,1) 0%, rgba(13,194,152,1) 50%, rgba(93,205,181,1) 100%)
+    background: linear-gradient(to right, rgba(13,194,152,1) 0%, rgba(13,194,152,1) 50%, rgba(93,205,181,1) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dc298', endColorstr='#5dcdb5', GradientType=1 )
+
+    .momento_head
+        h3
+            font-family: $RozhaOneRegular
+            font-size: 27px
+            line-height: 32px
+            letter-spacing: 0.01px
+            color: $white
+    .momentobtn
+        padding-top: 39px
+        a
+            color: $white
+            font-size: 19px
+            padding: 15px 65px
+            border: solid 1px rgba(255, 255, 255, 0.92)
+            &:hover
+                background-color: rgba(255, 255, 255, 0.92)
+                color: $skycolor
+
+
+.racionalgroup
+    padding: 89px 0 119px
+    .groupall
+        .group-lft
+            img
+                float: right
+        .group-ryt
+            padding-left: 79px
+            h4
+                font-family: $RozhaOneRegular
+                font-size: 30px
+                line-height: 35px
+                letter-spacing: 0.01px
+                color: $darkblue
+
+                span
+                    color: $skycolor
+
+
+
+.footer
+    padding: 49px 30px 33px
+    background: rgba(11,15,19,1)
+    background: -moz-linear-gradient(left, rgba(11,15,19,1) 0%, rgba(24,32,42,1) 100%)
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(11,15,19,1)), color-stop(100%, rgba(24,32,42,1)))
+    background: -webkit-linear-gradient(left, rgba(11,15,19,1) 0%, rgba(24,32,42,1) 100%)
+    background: -o-linear-gradient(left, rgba(11,15,19,1) 0%, rgba(24,32,42,1) 100%)
+    background: -ms-linear-gradient(left, rgba(11,15,19,1) 0%, rgba(24,32,42,1) 100%)
+    background: linear-gradient(to right, rgba(11,15,19,1) 0%, rgba(24,32,42,1) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b0f13', endColorstr='#18202a', GradientType=1 )
+
+    .footerhead
+        a 
+            color: $white
+    .footerStore
+        a
+            margin-right: 15px
+    
+    .footer-inner
+        padding-top: 53px
+        .footerarea
+            margin-bottom: 20px
+            ul 
+                &.footer_ul
+                    li
+                        margin-right: 47px
+                        a 
+                            @include menu
+                            color: $white
+                            &:hover
+                                color: $lightgreen !important
+
+
+        .footer-right
+            a 
+                color: $white
+
+    .borderarea
+        border: 1px solid #979797
+        opacity: 0.34
+
+    .footer-para
+        padding-top: 15px
+        p 
+            font-family: $ProductSansRegular
+            font-size: 14px
+            line-height: 19px
+            color: $dimblack
+            padding-right: 41%
+    .socialicon
+        a 
+            margin-right: 14px
+            padding-top: 33px
+            &:hover
+                svg
+                    path
+                        fill: $lightgreen
+
+
+//slick section started 
+.slickgroup
+    background: none
+    .slickgroupall
+        background-color: $transparentsky
+        padding: 0 50px
+        .slicklft
+            text-align: left
+            padding: 73px 0
+            .slickinner
+                h3
+                    line-height: 37px
+            .slicklftinner
+                background-color: $white
+                padding: 37px 39px
+                margin-top: 40px
+                border-radius: 10px
+                .meta
+                    h4  
+                        line-height: 27px
+                    h6
+                        font-family: $ProductSansBold
+                        font-size: 13px
+                        line-height: 25px
+                        letter-spacing: 0.52px
+                        color: $grayish
+                    .flag
+                        display: inline-flex
+                        margin-top: 7px
+                        align-items: center
+                        img
+                            margin-right: 12px
+                        h2
+                            @include med-largefont
+                            font-size: 25px
+                            color: blkcolor
+                            padding-bottom: 11px
+                    .flag2
+                        padding-top: 31px
+                        h5
+                            width: 42px
+                            height: 42px
+                            background-color: #d8d8d8
+                            border-radius: 50%
+                            margin-right: 13px
+                        p 
+                            padding-top: 0  
+                    
+                    h4
+                        color: #8d8d9b
+                        font-family: ProductSansRegular
+                    p 
+                        @include menu
+                        padding-top: 15px
+.row
+    &.mejor
+        padding-left: 0px
+         
+
+//slick section ended
+//mam css
+.slicko
+    position: relative
+.contain-slick 
+    position: relative
+
+.dotsarea
+    text-align: center
+    float: left
+    width: 100%
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    margin-bottom: 20px
+
+.slideshow-container 
+    max-width: 100%
+    position: relative
+    margin: auto
+
+
+.prev, 
+.next 
+    cursor: pointer
+    position: absolute
+    top: 0
+    top: 50%
+    width: auto
+    margin-top: -22px
+    //padding: 16px
+    color: white
+    background-color: $blkcolor
+    font-weight: bold
+    transition: 1s ease
+    width: 38px
+    height: 38px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+.prev
+    display: none
+    left: 0
+    transform: rotate(180deg)
+
+.next 
+    right: 31px
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover 
+    background-color: rgba(0,0,0,0.8)
+
+
+
+.text 
+    color: #f2f2f2
+    font-size: 15px
+    padding: 8px 12px
+    position: absolute
+    bottom: 8px
+    width: 100%
+    text-align: center
+
+
+
+.dot 
+    cursor: pointer
+    height: 6px
+    width: 6px
+    margin: 0 2px
+    background-color: #bbb
+    border-radius: 50%
+    display: inline-block
+    transition: background-color 0.6s ease
+
+
+.active, 
+.dot:hover 
+    background-color: $blkcolor
+
+
+.mySlides 
+    -webkit-animation-name: fade
+    -webkit-animation-duration: 0.5s
+    animation-name: fade
+    animation-duration: 0.5s
+    transition:  opacity 1000ms ease 0s
+.mySlides
+    width: 100%
+    float: left
+    display: none
+
+@-webkit-keyframes fade 
+    from 
+        opacity: .4
+    to 
+        opacity: 1
+
+
+@keyframes fade 
+    from 
+        opacity: .4
+    to 
+        opacity: 1
+
+
+//mam css ended
+.footerStore21
+    display: none
+.borderarea1
+    display: none
+.store12
+    display: none
+.appbtn
+    display: none
+.mobslick
+    display: none
+
+
+
+
+//media started
+
+@media(max-width:1199px)
+    .haz
+        .haz-outter
+            .haz-left-all
+                .haz-left
+                    padding-left: 113px
+                    padding-top: 82px
+                    h1
+                        font-size: 58.5px
+                        line-height: 58px
+                    p
+                        font-size: 20px
+                        line-height: 26px
+                    .store 
+                        padding-top: 60px
+                        a 
+                            font-size: 17px
+
+     
+.invertir
+    .mobilescreen-all
+        .mobtext
+            .badges
+                .badgetext
+                    p
+                        padding-right: 82px
+.slickgroup 
+    .slickgroupall 
+        .slicklft
+            padding: 40px 0 0
+
+
+@media(max-width:991px)
+
+
+    
+    .haz
+        .haz-outter
+            .haz-left-all
+                .haz-left
+                    padding-left: 45px
+                    padding-top: 46px
+                    h1
+                        font-size: 45.5px
+                        line-height: 50px
+
+                    p
+                        padding-top: 10px
+                        font-size: 18px
+                        line-height: 23px
+                    .store 
+                        padding-top: 40px
+                        a 
+                            padding: 10px 16px
+                            &.mobplay
+                                margin-right: 12px
+
+
+    .invertir
+        .nunca 
+            h3
+                font-size: 32px
+                line-height: 30px
+            p 
+                font-size: 19px
+                line-height: 25px
+                padding-top: 12px
+
+        .mobilescreen-all
+            .mobtext
+                padding-left: 20px
+                .badges
+                    .badgetext
+                        p
+                            padding-right: 0px
+                            font-size: 17px
+                            line-height: 24px
+                        h5
+                            font-size: 20px
+                            line-height: 22px
+
+    .pontu
+        padding: 40px 0
+
+        .viewbtn
+            padding-top: 30px
+
+    .momento 
+        .momentobtn 
+            a
+                padding: 12px 51px
+
+    .racionalgroup 
+        .groupall 
+            .group-ryt 
+                padding-left: 30px
+                h4
+                    font-size: 27px
+                    line-height: 32px
+
+    .footer 
+        .footer-inner 
+            .footerarea 
+                ul 
+                    &.footer_ul 
+                        li
+                            margin-right: 14px
+
+        .footer-para
+            p 
+                padding-right: 20%
+    .navbar-expand-md 
+        .navbar-toggler 
+            display: block
+    .navbar 
+        .nav_ul
+            ul
+                li
+                    margin-right: 12px
+   
+    
+    .collapse:not(.show) 
+        display: none!important
+    
+
+
+@media(max-width:767px)
+    .slickgroup
+        .slickgroupall 
+            .slicklft 
+                .slicklftinner 
+                    width: 295px
+                    padding: 20px 20px
+
+    .slickgroup 
+        .slickgroupall
+            padding: 0 20px
+
+    .side-padding 
+        padding: 0 0px
+    .slickimages
+        display: none
+    .slickouter       
+        display: block
+        background: url('../img/group.png') no-repeat
+        background-size: 100% 100%
+        padding: 0px 0px 150px
+        padding-left: 0px
+        padding-right: 16px
+    .navbar 
+        .nav_ul
+            float: initial
+
+    .haz 
+        .haz-outter 
+            .haz-left-all 
+                .haz-left 
+                    h1
+                        font-size: 40.5px
+                        line-height: 46px
+                    p 
+                        font-size: 17px
+                    .store 
+                        a 
+                            &.mobplay
+                                margin-right: 5px
+                                margin-bottom: 15px
+                            svg
+                                width: 20px
+                                margin-right: 10px
+
+    .mobscreen 
+        float: initial !important
+        text-align: center
+    .group-lft
+        text-align: center
+
+    .invertir 
+        .nunca 
+            h3
+                font-size: 27px
+                line-height: 26px
+            p 
+                font-size: 17px
+                line-height: 23px
+        .mobilescreen-all 
+            .mobtext 
+                .badges
+                    padding-bottom: 30px
+
+    .pontu
+        &.pontu1
+            background: none 
+        .pntuhead
+            padding-bottom: 20px
+        .mejor
+            padding-top: 15px
+            padding-bottom: 11px
+
+    .racionalgroup 
+        padding: 50px 0 60px
+        .groupall 
+            .group-lft 
+                img
+                    float: initial !important
+            .group-ryt
+                h4
+                    font-size: 24px
+                    line-height: 30px
+                    padding-top: 20px
+
+    .footer 
+        padding: 41px 10px 33px
+        .footer-inner
+            padding-top: 40px
+            .footerarea 
+                ul 
+                    &.footer_ul 
+                        li
+                            margin-right: 11px
+            .footer-right
+                float: left !important
+                margin-bottom: 15px
+        .footer-para 
+            p
+                padding-right: 0
+    
+    .next 
+        right: 0
+    
+
+@media(max-width:560px)
+    .momento
+        padding: 171px 17px 100px
+        .momento_head
+            h3
+                font-size: 24px
+                line-height: 31px
+    
+    .racionalgroup
+        padding: 114px 15px 108px
+        .groupall 
+            .group-ryt
+                padding-left: initial
+                text-align: center
+    .footer
+        .footerStore 
+            display: none
+        
+        .footer-inner 
+            padding-top: 30px
+            .footerarea
+                display: block !important 
+                ul 
+                    &.footer_ul 
+                        li
+                            display: block
+                            margin-top: 5px
+        .footerStore21
+            display: block
+            h6
+                @include menu
+                color: $white
+                padding: 24px 0 18px
+            a 
+                padding-bottom: 36px
+                margin-right: 5px
+
+        .borderarea1
+            display: block
+    .prev, .next
+        display: none
+    .haz 
+        .haz-outter 
+            .haz-left-all
+                width: 100%
+            .haz-right-all
+                width: 100%    
+
+    .side-padding
+        padding: 0
+    .noright
+        padding-right: 15px !important
+    .noleft
+        padding-left: 15px !important
+
+    .slickgroup
+        padding: 0
+        .slickgroupall
+            padding: 0
+            .slicklft 
+                .slickinner 
+                    
+                    h3
+                        line-height: 31px
+                        font-size: 28px
+                    p   
+                        font-size: 17px
+                        line-height: 22px
+                .slicklftinner
+                    width: 211px
+                    padding: 17px 19px
+                    margin-top: 37px
+                    .meta 
+                        .flag 
+                            h2
+                                font-size: 17px
+                                line-height: 24px
+                        h4
+                            font-size: 15px
+                            line-height: 20px
+                        p
+                            &.aporte 
+                                display: none  
+                        .flag2
+                            h5 
+                                width: 28px
+                                height: 28px
+                                margin-right: 10px
+                            p 
+                                font-size: 14px
+                                line-height: 17px
+
+    .invertir 
+        .nunca 
+            p 
+                br 
+                    display: none
+    .pontu 
+        .mejor
+            padding-left: 0px
+            margin: 0
+        &.pontu1 
+            .mejor
+                padding-left: 38px
+                
+
+    .haz 
+        .haz-outter 
+            .haz-left-all 
+                .haz-left 
+                    padding-top: 15px
+                    h1
+                        font-size: 49px
+                        line-height: 45px
+                .store
+                    display: none
+                    &.store12 
+                        display: block
+                        a 
+                            background-color: $skycolor 
+                            color: $lightsky 
+                            border-radius: 27px 
+    .mobtext
+        display: none
+
+
+
+
+@media(max-width:414px)
+    .slickgroup
+        .slickgroupall
+            .slicklft 
+                .slickinner
+                    p 
+                        margin-bottom: 20px
+                .slicklftinner
+                    margin-top: 0px
+                    padding: 15px 15px
+                    width: 190px
+                    .meta .flag2
+                        padding-top: 20px
+
+ 
+
+
+    .pontu
+        &.pontu1
+            background: url('../img/blue_bg.png') no-repeat
+            background-position: top right
+            margin-top: -70px
+            padding-top: 105px
+    .haz 
+        .haz-outter 
+            .haz-right-all
+                .haz-right
+                    img.iphone_mobile
+                        display: block
+                    img.desktop_vew
+                        display: none
+            .haz-left-all 
+                .haz-left 
+                    padding: 15px 19px 0
+                    h1
+                        font-size: 49px
+                        line-height: 45px
+                .store
+                    display: none
+                    &.store12 
+                        display: block
+                        a 
+                            font-size: 15px
+                            padding: 8px 20px
+    .racionalgroup 
+        .groupall 
+            .group-ryt
+                padding-top: 48px
+
+    .pontu1
+        .pntuhead
+            h3
+                font-size: 23px
+                letter-spacing: 0.01px
+
+    .pontu 
+        .mejor 
+            padding-left: 0
+            margin-bottom: 22px
+            .mejortext 
+                h4
+                    font-size: 17.5px
+                    line-height: 22px
+                p 
+                    font-size: 15.5px
+                    line-height: 22px
+            .mejorimg
+                height: 25px
+                width: 20px
+    .navbar
+        padding-left: 3px
+        padding-right: 3px
+
+    .momento
+        .momentobtn
+            &.appbtn
+                display: block
+                a 
+                    font-size: 15px
+                    line-height: 19px
+                    padding: 13px 16px
+                    display: inline-flex
+                    align-items: center
+                    border-radius: 31px
+                    svg
+                        margin-right: 10px
+                        width: 21px
+                        height: 25px
+                &:hover
+                    svg
+                        path
+                            fill: $skycolor
+            &.comenzarbtn
+                display: none
+    .slickimages
+        display: none
+
+    .slickgroup 
+        .slickgroupall 
+            padding-bottom: 50px
+                
+
+    .colxd
+        padding: 0 !important 
+    .slickouter       
+        display: block
+        background: url('../img/group.png') no-repeat
+        background-size: 100% 100%
+        padding: 30px 0px 195px
+        padding-left: 15px
+        padding-right: 16px
+    .slickinner
+        padding-left: 15px
+        padding-right: 16px
+    .navbar 
+        .nav_ul 
+            ul 
+                li
+                    &.headButtons 
+                        a 
+                            padding: 4px 16px
